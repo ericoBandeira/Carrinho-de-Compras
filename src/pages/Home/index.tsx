@@ -38,7 +38,7 @@ const Home = (): JSX.Element => {
 
       const data = response.data.map(product =>({
         ...product,
-        priceFormatted: formatPrice(product.price);
+        priceFormatted: formatPrice(product.price)
       }))
 
       setProducts(data);
